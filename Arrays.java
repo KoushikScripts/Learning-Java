@@ -13,10 +13,11 @@ public class Arrays {
         String[] drinks = new String[4]; // first declare the elements that we would like to use
 
         // now assigne/declare elements
+
         drinks[0] = "Coke";
         drinks[1] = "Pepsi";
-        drinks[2] = "coffee";
-        drinks[3] = "orange juice";
+        drinks[2] = "Fizz";
+        drinks[3] = "Fruti";
         //drinks[4] = "apple juice";
 
        // System.out.println(drinks[3]);
