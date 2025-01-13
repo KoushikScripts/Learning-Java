@@ -13,7 +13,7 @@ if git diff --quiet && git diff --cached --quiet; then
 fi
 
 # stage all changes
-git add .
+git add -A
 
 # commit with a timestamp
 commit_message="Auto-update: $(date +"%Y-%m-%d %H:%M:%S")"
