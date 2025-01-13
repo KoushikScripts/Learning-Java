@@ -11,11 +11,11 @@ public class UserInput {
 
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // this will clear the input buffer 
+        // scanner.nextLine(); // this will clear the input buffer 
 
         System.out.print("How tall are you ");
         double hight = scanner.nextDouble();
-        scanner.nextLine(); // this will clear the input buffer 
+        // scanner.nextLine(); // this will clear the input buffer 
         
 
         System.out.print("Are you a student? (true/false)");
@@ -26,7 +26,7 @@ public class UserInput {
         String color = scanner.nextLine(); // we need to get red of the previous line char 
 
       
-        System.out.println("Hello "+name+ "You are "+age+" years old and you are "+hight+"foot tall"+"you like "+color+"color");
+        System.out.println("Hello "+name+ "You are "+age+" years old and you are "+hight+"foot tall"+" you like "+color+" color");
       
       
         if(isStudent) {
