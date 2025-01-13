@@ -22,8 +22,6 @@ public class AreaOfRectangle {
         System.out.println("The area is: "+area+" cm²");
 
 
-
-
         scanner.close();
     }
     
