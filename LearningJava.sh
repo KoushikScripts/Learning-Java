@@ -1,38 +1,40 @@
 #!/bin/bash
 
-# stop the script if any command fails
+# Stop the script if any command fails
 set -e
 
-# move to the repo directory
+# Move to the repo directory
+echo "Traveling to the coding dungeon... 🛤️"
 cd /home/reddy/codes/Learning-Java
 
-# confirm Git repository status
+# Confirm Git repository status
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-    echo "Error: Not inside a valid Git repository!"
+    echo "Error: Not inside a valid Git repository! Abort mission! 🚨"
     exit 1
 fi
 
-# show Git status before changes
-echo "Checking repository status..."
+# Show Git status before changes
+echo "Peeking into the vault... 🧐"
 git status --short
 
-# add untracked and tracked files
-echo "Adding all changes and new files..."
+# Add untracked and tracked files
+echo "Stuffing your genius into the Git bag... 🛍️"
 git add -A
 
-# check for changes to be committed
+# Check for changes to be committed
 if git diff --cached --quiet; then
-    echo "No changes detected to commit. Exiting."
+    echo "Your code is too perfect. Nothing to commit! 🏖️"
     exit 0
 fi
 
-# commit the changes
+# Commit the changes
 commit_message="Auto-update: $(date +"%Y-%m-%d %H:%M:%S")"
-echo "Committing changes with message: $commit_message"
+echo "Sealing the deal with message: '$commit_message' 🔐"
 git commit -m "$commit_message"
 
-# push changes to the repository
-echo "Pushing changes to remote..."
+# Push changes to the repository
+echo "Launching your code into the GitHub stratosphere 🚀..."
 git push
 
-echo "Push Done!"
+echo "All done! Time to bask in the glory of automation ✨"
+
